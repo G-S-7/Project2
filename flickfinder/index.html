@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flick Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img class="slide"
+                src="https://img.freepik.com/free-photo/dragons-fantasy-artificial-intelligence-image_23-2150400886.jpg"
+                alt="Image1">
+            <img class="slide"
+                src="https://img.freepik.com/premium-photo/knight-with-magical-weapon-standing-with-fire-dragon-it_879541-234.jpg"
+                alt="Image 2">
+            <img class="slide"
+                src="https://img.freepik.com/premium-photo/man-stands-front-huge-dragon-fantasy-world-generative-ai_77190-10846.jpg"
+                alt="Image 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="contents">
+        <div class="nav">
+            <button id="name">FlickFinder</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Show</a></li>
+                <li><a href="#">Movie</a></li>
+                <li><a href="#">Upcoming</a></li>
+                <li
+                    style="background-color:  #22836e; padding-left:5px; padding-right:5px; color:white; border-bottom-right-radius: 10px; border-top-left-radius: 10px;">
+                    <a href="#">Favorite💚</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="main">
+            <h1>Bringing the Big Screen to Your Screen</h1> <br>
+            <p>Discover, critique, and celebrate movies with honest reviews and fresh takes on every film</p>
+            <br>
+            <br>
+            <button style="background-color: white; padding: 10px; border-radius: 5px;">Discover More</button>
+        </div>
+    </div>
+    <h2>Movie List</h2>
+    <div class="categories">
+        <button>Marvel Movie</button>
+        <button>Funnny Movie</button>
+        <button>Animation Movie</button>
+        <button>Web Series</button>
+    </div>
+    <br><br>
+    <div class="searchbar">
+        <button id="caller"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input id="s" type="text" placeholder="        Search here.">
+        <button><i class="fa-solid fa-microphone"></i></button>
+    </div>
+    <br>
+    <div class="movies">
+        <div class="card">
+            <img src="" alt="">
+            <div class="info">
+                <h3>Title: </h3>
+                <p>Type: </p>
+                <p>Release Year: </p>
+            </div>
+            <button><i class="fa-regular fa-heart"></i></button>
+        </div>
+    </div>
+    <br>
+    <div class="pages">
+        <button id="more">Show more.. </button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+
+    <div class="ad">
+        <div class="images">
+            <img class="img" src="https://img.freepik.com/free-photo/3d-cinema-festival-popcorn-cup_23-2151005389.jpg?semt=ais_hybrid&w=740"
+                alt="Image1">
+            <img class="img" src="https://img.freepik.com/free-photo/view-3d-cinema-festival-theater-seating_23-2151020704.jpg?t=st=1749395002~exp=1749398602~hmac=d8e14c5b3c323a638a7b1b337fbf85d142423771562b600105da25b008b5bf70"
+                alt="Image 2">
+        </div>
+        <button class="prev1" onclick="prevImg()">&#10094;</button>
+        <button class="next1" onclick="nextImg()">&#10095;</button>
+    </div>
+<h2>Frequently Asked Questions</h2>
+<div class="accordion">
+    <div class="accordion-item">
+        <div class="accordion-title">
+            <span>1. Wat is this website about?</span>
+            <span class="icon">⊕</span>
+        </div>
+        <div class="accordion-content">
+            This website provides in-depth reviews, ratings, and analysis of movies from different genres, release periods, and countries. You'll find user-submitted reviews, critic opinions, and recommendations for all types of films.
+        </div>
+    </div>
+    <div class="accordion-item">
+        <div class="accordion-title">
+            <span>2. How are movies rated?</span>
+            <span class="icon">⊕</span>
+        </div>
+        <div class="accordion-content">
+        Movies are rated based on user reviews and critic analysis.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        <span>3. Can I submit my own reviews?</span>
+        <span class="icon">⊕</span>
+      </div>
+      <div class="accordion-content">
+        Yes, you can register and start submitting your own reviews.
+      </div>
+     </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        <span>4. Is the content on this website free?</span>
+        <span class="icon">⊕</span>
+      </div>
+      <div class="accordion-content">
+        Yes, all content is free to access without any subscription.
+      </div>
+    </div>
+<div class="accordion-item">
+      <div class="accordion-title">
+        <span>5. How do I search for a specific movie?</span>
+        <span class="icon">⊕</span>
+      </div>
+      <div class="accordion-content">
+        Use the search bar at the top of this section to look for a specific title.
+      </div>
+    </div>
+</div>
+<hr style="background-color: white;">
+<footer>
+<div class="contents1">
+    <h3>FlickFinder</h3>
+    <a href="#">Home</a><br>
+    <a href="#">About us</a><br>
+    <a href="#">Contact us</a>
+</div>
+<div class="contents1">
+    <h3>Products</h3>
+    <a href="#">TV Shows</a><br>
+    <a href="#">Web Series</a><br>
+    <a href="#">Hollywood</a><br>
+    <a href="#">Bollywood</a>
+</div>
+<div class="contents1">
+    <h3>Resources</h3>    
+    <a href="#">FAQs</a><br>
+    <a href="#">Search Movie</a>
+</div>
+<div class="contents1">
+    <h3>Newsletter</h3>
+    <input type="email" placeholder="mail@pagedone.com" id="mail"><br>
+    <input type="checkbox"> I agree with <a href="#">Privacy Policy</a> and <a href="#">Terms and Conditions</a><br>
+    <button>Send</button>
+</div>
+</footer>
+<footer>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+</footer>
+    <br><p id="copyright">&copyFlickFinder 2025, All rights reserved. Developed by Simran G.</p>
+
+</body>
+<script src="logic.js"></script>
+<script src="Movies.js"></script>
+</html>
